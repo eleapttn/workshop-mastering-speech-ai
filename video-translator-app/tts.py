@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from moviepy.editor import *
 from pydub import AudioSegment
 
+# load environment variables from .env file
 load_dotenv('/workspace/.env')
 
 inputs_path = "/workspace/inputs"
@@ -26,7 +27,7 @@ def add_audio_on_video(translated_audio, video_input, video_title):
 
 
 # TTS function
-def synthetize(output_nmt, video_input, video_title, voice_type):
+def synthetize_speech(output_nmt, video_input, video_title, voice_type):
 
     output_audio = 0
     output_audio_file = f"{outputs_path}/audios/{video_title}.wav"
@@ -72,7 +73,7 @@ def synthetize(output_nmt, video_input, video_title, voice_type):
     # export new audio as wav file
     output_audio.export(output_audio_file, format="wav")
     
-    # add new voice on video
+    # add new voice on final video
     voice_dubbing = add_audio_on_video(output_audio_file, video_input, video_title)
     
     return voice_dubbing
