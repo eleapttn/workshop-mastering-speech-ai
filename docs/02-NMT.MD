@@ -32,24 +32,21 @@ headers = {
 
 # Specify the input data to be sent and translated
 data = {
-  "model": "en_de_24x6", # en_de allows the use of the English to German NMT model
+  "model": "en_fr_24x6", # en_de allows the use of the English to French NMT model
   "source_language": "en", # Input language will be English (language code: `en`)
-  "target_language": "de", # Input language will be German (language code: `de`)
-  "texts": [
-    "Hello, my name is John",
-    "How are you today?"
-  ]
+  "target_language": "fr", # Input language will be French (language code: `fr`)
+  "texts": ["This is the sentence I want to translate"]
 }
 
 # Send the request to the correct model endpoint and get response 
-# We make sure to use the right endpoint, that targets the right model (English to German)
+# We make sure to use the right endpoint, that targets the right model (English to French)
 response = requests.post(
-    "https://nvr-nmt-en-de.endpoints.kepler.ai.cloud.ovh.net/api/v1/nmt/translate_text", 
+    "https://nvr-nmt-en-fr.endpoints.kepler.ai.cloud.ovh.net/api/v1/nmt/translate_text", 
     json=data,
     headers=headers
 )
 
-# return translation
+# Return translation
 if response.status_code == 200:
     response_data = response.json()
     print("Translations:\n", response_data)
