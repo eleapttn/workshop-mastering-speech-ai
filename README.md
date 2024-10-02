@@ -14,7 +14,7 @@ By the end of this Hands-On Lab, you'll be able to:
     - Synthesize translated text using TTS to modify the spoken language of the original video.
     - Build a powerful web app that combines these steps, so you can subtitle and dub voices of any video !
 
-![image](speech-ai-puzzle.png)
+![image](notebooks/images/speech-ai-puzzle.png)
 
 ## Get started with Speech AI
 
@@ -28,11 +28,11 @@ Once you've learned the basics of Speech AI, you'll learn about some key feature
 - Take silences into account during translation using the NMT model.
 - Synthesize the translated text to voice dub the original video, using the TTS model.
 
-![image](speech-ai-puzzle.png)
-
 ## Build a video translator web app
 
 Now it's time to put this knowledge into practice by building a **Video Translator web app**, which will integrate ASR, NMT, and TTS endpoints to enable you to transcribe, translate, and dub videos in real-time.
+
+![image](notebooks/images/translator-web-app-archi.png)
 
 - create the `.env` file:
 
