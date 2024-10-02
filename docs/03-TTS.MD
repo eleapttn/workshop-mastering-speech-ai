@@ -55,6 +55,7 @@ if response.status_code == 200:
 else:
     print("Error:", response.status_code)
 
+## How to read your generated audio file in a Media Player
 
 Then, create another code cell to play your generated audio file:
     
