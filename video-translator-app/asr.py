@@ -3,10 +3,11 @@ import os
 import requests
 from dotenv import load_dotenv
 
+# load environment variables from .env file
 load_dotenv('/workspace/.env')
 
 # ASR function
-def transcribe(audio_input):
+def transcribe_audio(audio_input):
 
     # put audio file as endpoint input
     audio_file = [

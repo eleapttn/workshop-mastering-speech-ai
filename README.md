@@ -6,18 +6,33 @@ This workshop allows you to to **master Speech AI** by creating a **Video Transl
 
 ## Concept
 
-Subtitle and dub voices of any video using **Automatic Speech Recognition** (ASR), **Neural Machine Translation** (NMT) and **Text To Speech** (TTS) inside a powerful web app.
+By the end of this Hands-On Lab, you'll be able to:
+
+    - Master Speech AI APIs, including Automatic Speech Recognition (ASR), Neural Machine Translation (NMT), and Text-to-Speech (TTS).
+    - Transcribe audio or video recordings using ASR.
+    - Translate transcribed text into another language using NMT.
+    - Synthesize translated text using TTS to modify the spoken language of the original video.
+    - Build a powerful web app that combines these steps, so you can subtitle and dub voices of any video !
 
 ![image](speech-ai-puzzle.png)
 
 ## Get started with Speech AI
 
+To get started with the workshop, open the `notebooks/0_SPEECH_AI_BASICS.ipynb` notebook to learn about Speech AI basics and see examples of how to use ASR, NMT, and TTS endpoints.
 
 ## Focus on key features
+
+Once you've learned the basics of Speech AI, you'll learn about some key features that make it even more powerful. You will learn how to:
+
+- Generate SRT files from ASR model output.
+- Take silences into account during translation using the NMT model.
+- Synthesize the translated text to voice dub the original video, using the TTS model.
 
 ![image](speech-ai-puzzle.png)
 
 ## Build a video translator web app
+
+Now it's time to put this knowledge into practice by building a **Video Translator web app**, which will integrate ASR, NMT, and TTS endpoints to enable you to transcribe, translate, and dub videos in real-time.
 
 - create the `.env` file:
 

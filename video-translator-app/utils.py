@@ -10,9 +10,9 @@ from moviepy.editor import *
 
 
 # /// Import Speech AI functions \\\
-from asr import transcribe
-from tts import synthetize
-from nmt import translate
+from asr import transcribe_audio
+from tts import synthetize_speech
+from nmt import translate_text
 
 
 # /// Directory creation \\\

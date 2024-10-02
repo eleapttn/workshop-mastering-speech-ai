@@ -3,10 +3,11 @@ import os
 import requests
 from dotenv import load_dotenv
 
+# load environment variables from .env file
 load_dotenv('/workspace/.env')
 
 # NMT function
-def translate(output_asr):
+def translate_text(output_asr):
     
     output_nmt = []
     for sentence in range(len(output_asr)):
