@@ -4,27 +4,14 @@ This first documentation is intended to give you all the elements you will need 
 
 ## Import libraries
 
-To interact with the `ASR`, `NMT`, and `TTS` endpoints, you will need to import the `requests` library, which allows us to make `HTTP` requests:
+To interact with the `ASR`, `NMT`, and `TTS` endpoints, you will need to import the `requests` and `os` libraries, which allows us to make `HTTP` requests and use environment variables:
 
 ```python
 import requests
+import os
 ```
 
-You can copy and paste this first line of code into an empty cell of the notebook.
-
-## Specify your AI Endpoint token
-
-You will also need a free AI Endpoints token. 
-
-Visit the [AI Endpoints website](https://endpoints.ai.cloud.ovh.net/) and click the `Get it` button to obtain a token.
-
-Then, you can specify your token variable into your python code with the following line:
-
-```python
-ai_endpoint_token = "<YOUR_TOKEN>"
-```
-
-> :WARNING: **Make sure to replace <YOUR_TOKEN> by yours**
+You can copy and paste these first lines of code into an empty cell of the notebook.
 
 ## Define the headers of your request
 
@@ -36,14 +23,14 @@ These headers will look like the following block code:
 headers = {
     "Content-Type": "application/json",
     "accept": "application/json",
-    "Authorization": f"Bearer {ai_endpoint_token}",
+    "Authorization": f"Bearer {os.environ.get('ai_endpoint_token')}",
 }
 ```
 
 It is composed of 3 elements which are:
 - `Content-Type` It describes the format of the input we will send to the model. Input data is model-dependent (ASR will expect an audio file as its input, while NMT a text).
 - `accept` describes the format of the desired response content. Its **value will change** on the model we will use (`application/json` if we expect classic data, or `application/octet-stream` for generating audio files ...).
-- `Authorization` allows to specify your AI Endpoints token, to authenticate your request.
+- `Authorization` allows to specify your AI Endpoints token, to authenticate your request. This token is already set in your AI Notebook so you won't have to change anything there.
 
 Do not worry, you will find all the information you will need in the next documentations! 
 

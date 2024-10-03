@@ -10,24 +10,20 @@
 
 The NMT API endpoint is based on an NMT model developed by [NVIDIA](https://www.nvidia.com/en-gb/). AI endpoints offers you a wide range of translations options for several languages (English to {French, German, Spanish, and Chinese}).
 
-The following example will allow you to translate text from **english** to **German**. It will return the translated text by the model.
-
-> :WARNING: **Don't forget to replace <ai_endpoint_token> by yours**
+The following example will allow you to translate text from **English** to **French**. It will return the translated text by the model.
 
 ```python
 
-# Import the requests library into your notebook environment if not already done
+# Import the requests and os libraries into your notebook environment, if not already done
 import requests
-
-# Replace the default <YOUR_TOKEN> value by your AI Endpoints token.
-ai_endpoint_token = "<ai_endpoint_token>"
+import os
 
 # Specify the headers of your request 
 # We will expect a JSON as the input and the output, since the NMT model will receive text, and generate text.
 headers = {
     "accept": "application/json",
     "Content-Type": "application/json",
-    "Authorization": f"Bearer {ai_endpoint_token}",
+    "Authorization": f"Bearer {os.environ.get('ai_endpoint_token')}",
 }
 
 # Specify the input data to be sent and translated

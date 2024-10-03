@@ -12,16 +12,13 @@ The TTS API endpoint is based on an TTS model, developed by [NVIDIA](https://www
 
 The following example will allow you to generate **english** speech audio files from english texts. We will then play the audio file in another cell code.
 
-> :WARNING: **Don't forget to replace <ai_endpoint_token> by yours**
-> **Make also sure to replace the `text_to_convert_to_speech` variable by the text you want to generate speech from!**
+> :WARNING: **Make also sure to replace the `text_to_convert_to_speech` variable by the text you want to generate speech from!**
 
 ```python
 
-# Import the requests library into your notebook environment if not already done
+# Import the requests and os libraries into your notebook environment, if not already done
 import requests
-
-# Replace the default <YOUR_TOKEN> value by your AI Endpoints token.
-ai_endpoint_token = "<ai_endpoint_token>"
+import os
 
 # Specify the headers of your request 
 # We will expect a JSON as the input since it is a text
@@ -29,7 +26,7 @@ ai_endpoint_token = "<ai_endpoint_token>"
 headers = {
     "accept": "application/octet-stream",
     "Content-Type": "application/json",
-    "Authorization": f"Bearer {ai_endpoint_token}",
+    "Authorization": f"Bearer {os.environ.get('ai_endpoint_token')}",
 }
 
 # Specify the input data to be sent and converted to speech
