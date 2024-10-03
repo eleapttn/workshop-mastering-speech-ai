@@ -13,22 +13,19 @@ The ASR API endpoint is based on an ASR model developed by [NVIDIA](https://www.
 
 The following example will allow you to translate **english** (GB) audio files. It will return the sentence transcribed by the model.
 
-> :WARNING: **Don't forget to replace <ai_endpoint_token> by yours**
-> **Make also sure to enter a valid audio file path (replace <audio_file> by an existing one. You can find an audio sample in the `audio_samples` folder.**
+> :WARNING: **Make sure to enter a valid audio file path (replace <audio_file> by an existing one. You can find an audio sample in the `audio_samples` folder.**
 
 ```python
 
-# Import the requests library into your notebook environment if not already done
+# Import the requests and os libraries into your notebook environment, if not already done
 import requests
-
-# Replace the default <YOUR_TOKEN> value by your AI Endpoints token.
-ai_endpoint_token = "<ai_endpoint_token>"
+import os
 
 # Specify the headers of your request 
 # We will expect a JSON as the output, since the ASR model will generate text.
 headers = headers = {
     'accept': 'application/json',
-    "Authorization": f"Bearer {ai_endpoint_token}",
+    "Authorization": f"Bearer {os.environ.get('ai_endpoint_token')}",
 }
 
 # Specify the audio file to be uploaded and transcribed
