@@ -36,7 +36,7 @@ files = [
 # Send the request to the correct model endpoint and get response 
 # Here we use the "en-gb" version, which is meant for English audio files.
 response = requests.post(
-    "https://nvr-asr-en-gb.endpoints.kepler.ai.cloud.ovh.net/api/v1/asr/recognize", 
+    os.getenv("ASR_EN_GB_ENDPOINT"), 
     files=files, 
     headers=headers
 )

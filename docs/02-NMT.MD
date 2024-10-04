@@ -37,7 +37,7 @@ data = {
 # Send the request to the correct model endpoint and get response 
 # We make sure to use the right endpoint, that targets the right model (English to French)
 response = requests.post(
-    "https://nvr-nmt-en-fr.endpoints.kepler.ai.cloud.ovh.net/api/v1/nmt/translate_text", 
+    os.getenv("NMT_EN_FR_ENDPOINT"), 
     json=data,
     headers=headers
 )

@@ -41,7 +41,7 @@ data = {
 # Send the request to the correct model endpoint and get response 
 # Here we use the "en-us" version, which is meant for generating English audio files.
 response = requests.post(
-    "https://nvr-tts-en-us.endpoints.kepler.ai.cloud.ovh.net/api/v1/tts/text_to_audio",
+    os.getenv("TTS_EN_US_ENDPOINT"),
     json=data,
     headers=headers
 )
