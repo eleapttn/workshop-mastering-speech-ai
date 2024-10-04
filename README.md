@@ -34,18 +34,9 @@ Now it's time to put this knowledge into practice by building a **Video Translat
 
 ![image](notebooks/images/translator-web-app-archi.png)
 
-- create the `.env` file:
-
-```
-ASR_ENDPOINT=https://nvr-asr-fr-fr.endpoints.kepler.ai.cloud.ovh.net/api/v1/asr/recognize
-NMT_ENDPOINT=https://nvr-nmt-en-fr.endpoints.kepler.ai.cloud.ovh.net/api/v1/nmt/translate_text
-TTS_ENDPOINT=https://nvr-tts-en-us.endpoints.kepler.ai.cloud.ovh.net/api/v1/tts/text_to_audio
-OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
-```
-
 ## Deploy the app with OVHcloud AI Deploy
 
-> Don't forget to add your environment file `.env` in your Path before building the Docker Image.
+> Don't forget to replace `<ai-endpoints-api-token>` by your access token in `ovhai` deployment command!
 
 ### 1. Create the Dockerfile
 
@@ -84,8 +75,37 @@ ovhai app run \
     --cpu 12 \
     --default-http-port 8000 \
     --volume standalone:/tmp/gradio:rw \
+    --env ASR_FR_FR_ENDPOINT=https://nvr-asr-fr-fr.endpoints.kepler.ai.cloud.ovh.net/api/v1/asr/recognize \
+    --env NMT_EN_FR_ENDPOINT=https://nvr-nmt-en-fr.endpoints.kepler.ai.cloud.ovh.net/api/v1/nmt/translate_text \
+    --env TTS_EN_US_ENDPOINT=https://nvr-tts-en-us.endpoints.kepler.ai.cloud.ovh.net/api/v1/tts/text_to_audio \
+    --env OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token> \
     --unsecure-http \
     eleapttn/speech-ai-video-translator-app:v1.0.0
 ```
 
+> Access the web app on the following link: **ADD LINK**
+
+## References
+
+To go further with Speech AI, refer to the following links.
+
+### AI Endpoints
+
+- https://endpoints.ai.cloud.ovh.net/
+
+### Slides
+
+- **ADD LINK**
+
+### GitHub repositories
+
+- https://github.com/eleapttn/workshop-mastering-speech-ai.git
+- https://github.com/ovh/public-cloud-examples/tree/main/ai/ai-endpoints
+
+### Blog articles
+
+- https://blog.ovhcloud.com/master-speech-ai-and-build-your-own-video-translator-app-with-ai-endpoints/
+- https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/
+- https://blog.ovhcloud.com/build-a-powerful-audio-virtual-assistant-with-ai-endpoints/
+- https://blog.ovhcloud.com/create-audio-summarizer-assistant-with-ai-endpoints/
 

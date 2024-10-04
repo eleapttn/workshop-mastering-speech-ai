@@ -1,10 +1,6 @@
 # import dependencies
 import os
 import requests
-from dotenv import load_dotenv
-
-# load environment variables from .env file
-load_dotenv('/workspace/.env')
 
 # ASR function
 def transcribe_audio(audio_input):
@@ -16,7 +12,7 @@ def transcribe_audio(audio_input):
     
     # get response from endpoint
     response = requests.post(
-        os.environ.get('ASR_ENDPOINT'), 
+        os.environ.get('ASR_FR_FR_ENDPOINT'), 
         files=audio_file, 
         headers= {
             'accept': 'application/json',
