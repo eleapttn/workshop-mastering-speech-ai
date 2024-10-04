@@ -26,7 +26,7 @@ import os
 headers = {
     "accept": "application/octet-stream",
     "Content-Type": "application/json",
-    "Authorization": f"Bearer {os.environ.get('ai_endpoint_token')}",
+    "Authorization": f"Bearer {os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
 }
 
 # Specify the input data to be sent and converted to speech

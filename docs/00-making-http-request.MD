@@ -23,7 +23,7 @@ These headers will look like the following block code:
 headers = {
     "Content-Type": "application/json",
     "accept": "application/json",
-    "Authorization": f"Bearer {os.environ.get('ai_endpoint_token')}",
+    "Authorization": f"Bearer {os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
 }
 ```
 

@@ -25,7 +25,7 @@ import os
 # We will expect a JSON as the output, since the ASR model will generate text.
 headers = headers = {
     'accept': 'application/json',
-    "Authorization": f"Bearer {os.environ.get('ai_endpoint_token')}",
+    "Authorization": f"Bearer {os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
 }
 
 # Specify the audio file to be uploaded and transcribed
