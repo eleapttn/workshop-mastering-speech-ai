@@ -1,10 +1,6 @@
 # import dependencies
 import os
 import requests
-from dotenv import load_dotenv
-
-# load environment variables from .env file
-load_dotenv('/workspace/.env')
 
 # NMT function
 def translate_text(output_asr):
@@ -23,7 +19,7 @@ def translate_text(output_asr):
 
        # get response from endpoint
         response = requests.post(
-            os.environ.get('NMT_ENDPOINT'), 
+            os.environ.get('NMT_EN_FR_ENDPOINT'), 
             json=data, 
             headers= {
                 'accept': 'application/json',

@@ -1,12 +1,8 @@
 # import dependencies
 import os
 import requests
-from dotenv import load_dotenv
 from moviepy.editor import *
 from pydub import AudioSegment
-
-# load environment variables from .env file
-load_dotenv('/workspace/.env')
 
 inputs_path = "/workspace/inputs"
 outputs_path = "/workspace/outputs"
@@ -52,7 +48,7 @@ def synthetize_speech(output_nmt, video_input, video_title, voice_type):
         
         # get response from endpoint
         response = requests.post(
-            os.environ.get('TTS_ENDPOINT'), 
+            os.environ.get('TTS_EN_US_ENDPOINT'), 
             json=data, 
             headers= {
                 'accept': 'application/json',
