@@ -81,11 +81,11 @@ def process_video(video_input, translation_mode, voice_type):
 
     # ASR (audio -> text) in source language
     audio_input = f"{inputs_path}/audios/{video_title}.wav"
-    audio_to_text = transcribe(audio_input)
+    audio_to_text = transcribe_audio(audio_input)
     print(f"Speech to Text synthesis done for video {video_title}.mp4")
 
     # NMT (text -> text) in target language
-    text_to_text_translation = translate(audio_to_text)
+    text_to_text_translation = translate_text(audio_to_text)
     print(f"Text translation done for video {video_title}.mp4")
     output_subtitles_file = f"{outputs_path}/subtitles/{video_title}.srt"
     with open(output_subtitles_file, 'w') as f:
@@ -102,7 +102,7 @@ def process_video(video_input, translation_mode, voice_type):
         
     # TTS (text -> audio) in target language
     else:
-        text_to_audio = synthetize(text_to_text_translation, video_input, video_title, voice_type)
+        text_to_audio = synthetize_speech(text_to_text_translation, video_input, video_title, voice_type)
         print(f"Voice dubbing done for video {video_title}.mp4")
 
         video_output = gr.Video(
