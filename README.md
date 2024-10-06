@@ -83,7 +83,7 @@ ovhai app run \
     eleapttn/speech-ai-video-translator-app:v1.0.0
 ```
 
-> Access the web app on the following link: **(https://bit.ly/video-translator-devoxx)[https://bit.ly/video-translator-devoxx]**
+> Access the web app on the following link: **[https://bit.ly/video-translator-devoxx](https://bit.ly/video-translator-devoxx)**
 
 ## References
 
