@@ -8,7 +8,7 @@
 
 ## How to use the NMT API Endpoint
 
-The NMT API endpoint is based on an NMT model developed by [NVIDIA](https://www.nvidia.com/en-gb/). AI endpoints offers you a wide range of translations options for several languages (English to {French, German, Spanish, and Chinese}).
+The NMT API endpoint is based on an NMT model developed by [NVIDIA](https://www.nvidia.com/en-gb/). AI endpoints offers you a wide range of translations options for several languages (English, French, German, Spanish, and Chinese)).
 
 The following example will allow you to translate text from **English** to **German**. It will return the translated text by the model.
 
@@ -28,9 +28,9 @@ headers = {
 
 # Specify the input data to be sent and translated
 data = {
-  "model": "en_de_24x6", # en_de allows the use of the English to German NMT model
+  "model": "en_de_24x6", # en_de allows the use of the English & German NMT model. Input can either be German/English, and the output will be the other one.
   "source_language": "en", # Input language will be English (language code: `en`)
-  "target_language": "de", # Input language will be German (language code: `de`)
+  "target_language": "de", # Output language will be German (language code: `de`)
   "texts": ["This is the sentence I want to translate"]
 }
 

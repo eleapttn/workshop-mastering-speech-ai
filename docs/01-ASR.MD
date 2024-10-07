@@ -7,6 +7,19 @@ preprocessing, feature extraction, acoustic modeling, language modeling, and spe
 
 ![ASR](./images/ASR.png)
 
+## How to read an audio file using a Media Player
+
+Some english audio files are provided in the `/workspace/workshop-mastering-speech-ai/samples/audio_samples/` directory.
+
+You can play them by running the following code and adapting the audio file path:
+    
+```python
+import IPython.display as ipd
+
+# Show an audio player
+ipd.Audio(<audio_file_path>)
+```
+
 ## How to use the ASR API Endpoint
 
 The ASR API endpoint is based on an ASR model developed by [NVIDIA](https://www.nvidia.com/en-gb/). AI endpoints offers you a wide range of transcription options for several languages (English, French, German, Italian, Spanish, and Chinese). 
