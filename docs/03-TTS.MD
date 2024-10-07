@@ -51,6 +51,7 @@ if response.status_code == 200:
     response_data = response.content
 else:
     print("Error:", response.status_code)
+```
 
 ## How to read your generated audio file in a Media Player
 

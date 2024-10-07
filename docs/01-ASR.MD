@@ -30,7 +30,7 @@ headers = {
 
 # Specify the audio file to be uploaded and transcribed
 files = [
-    ('audio', open('<audio_file>', 'rb')),
+    ('audio', open('<path_to_audio_file>', 'rb')),
 ]
 
 # Send the request to the correct model endpoint and get response 
@@ -47,7 +47,7 @@ if response.status_code == 200:
     resp=''
     for alternative in response_data:
         resp+=alternative['alternatives'][0]['transcript']
-    print("Audio transcription in english:\n", resp)
+    print("Audio transcription in english:\n\n", resp)
 else:
     print("Error:", response.status_code)
 ```
