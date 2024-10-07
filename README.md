@@ -95,7 +95,7 @@ To go further with Speech AI, refer to the following links.
 
 ### Slides
 
-- **[Mastering Speech AI APIs presentation](https://www.canva.com/design/DAGQoCH-u9A/48MFjrelitPQGktd3avn-w/view?utm_content=DAGQoCH-u9A&utm_campaign=designshare&utm_medium=link&utm_source=editor)**
+- [Mastering Speech AI APIs presentation](https://www.canva.com/design/DAGQoCH-u9A/48MFjrelitPQGktd3avn-w/view?utm_content=DAGQoCH-u9A&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ### GitHub repositories
 
