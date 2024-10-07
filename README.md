@@ -91,7 +91,7 @@ To go further with Speech AI, refer to the following links.
 
 ### AI Endpoints
 
-- [https://endpoints.ai.cloud.ovh.net/](https://endpoints.ai.cloud.ovh.net/)
+- [AI Endpoints website](https://endpoints.ai.cloud.ovh.net/)
 
 ### Slides
 
@@ -99,13 +99,12 @@ To go further with Speech AI, refer to the following links.
 
 ### GitHub repositories
 
-- https://github.com/eleapttn/workshop-mastering-speech-ai.git
-- https://github.com/ovh/public-cloud-examples/tree/main/ai/ai-endpoints
+- [Some AI Endpoints examples](https://github.com/ovh/public-cloud-examples/tree/main/ai/ai-endpoints)
 
 ### Blog articles
 
-- https://blog.ovhcloud.com/master-speech-ai-and-build-your-own-video-translator-app-with-ai-endpoints/
-- https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/
-- https://blog.ovhcloud.com/build-a-powerful-audio-virtual-assistant-with-ai-endpoints/
-- https://blog.ovhcloud.com/create-audio-summarizer-assistant-with-ai-endpoints/
+- [How to build a video translator app using AI Endpoints](https://blog.ovhcloud.com/master-speech-ai-and-build-your-own-video-translator-app-with-ai-endpoints/)
+- [Build a Powerful Audio Virtual Assistant with AI Endpoints](https://blog.ovhcloud.com/build-a-powerful-audio-virtual-assistant-with-ai-endpoints/)
+- [Create an audio summarizer assistant with AI Endpoints](https://blog.ovhcloud.com/create-audio-summarizer-assistant-with-ai-endpoints/)
+- [Build and deploy a Speech-To-Text Application using an AI model and AI Deploy](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/)
 
