@@ -23,7 +23,7 @@ import os
 
 # Specify the headers of your request 
 # We will expect a JSON as the output, since the ASR model will generate text.
-headers = headers = {
+headers = {
     'accept': 'application/json',
     "Authorization": f"Bearer {os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
 }
