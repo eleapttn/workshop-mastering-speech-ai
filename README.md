@@ -60,12 +60,12 @@ CMD [ "python3" , "/workspace/main.py" ]
 
 Build the Docker image:
 
-`docker build . -t speech-ai-video-translator-app:v1.0.0`
+`docker build . -t speech-ai-video-translator-app:v1.0.1`
 
 Tag and push the Docker image on Docker Hub:
 
-`docker tag speech-ai-video-translator-app:v1.0.0 eleapttn/speech-ai-video-translator-app:v1.0.0`
-`docker push eleapttn/speech-ai-video-translator-app:v1.0.0`
+`docker tag speech-ai-video-translator-app:v1.0.1 eleapttn/speech-ai-video-translator-app:v1.0.1`
+`docker push eleapttn/speech-ai-video-translator-app:v1.0.1`
 
 ## 3. Launch Video Translator app
 
@@ -80,7 +80,7 @@ ovhai app run \
     --env TTS_EN_US_ENDPOINT=https://nvr-tts-en-us.endpoints.kepler.ai.cloud.ovh.net/api/v1/tts/text_to_audio \
     --env OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token> \
     --unsecure-http \
-    eleapttn/speech-ai-video-translator-app:v1.0.0
+    eleapttn/speech-ai-video-translator-app:v1.0.1
 ```
 
 > Access the web app on the following link: **[https://bit.ly/video-translator-devoxx](https://bit.ly/video-translator-devoxx)**
@@ -91,11 +91,11 @@ To go further with Speech AI, refer to the following links.
 
 ### AI Endpoints
 
-- https://endpoints.ai.cloud.ovh.net/
+- [https://endpoints.ai.cloud.ovh.net/](https://endpoints.ai.cloud.ovh.net/)
 
 ### Slides
 
-- **ADD LINK**
+- **[Mastering Speech AI APIs presentation](https://www.canva.com/design/DAGQoCH-u9A/48MFjrelitPQGktd3avn-w/view?utm_content=DAGQoCH-u9A&utm_campaign=designshare&utm_medium=link&utm_source=editor)**
 
 ### GitHub repositories
 
