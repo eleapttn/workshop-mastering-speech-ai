@@ -58,4 +58,4 @@ else:
 
 By following these steps, you should now be able to make your first requests to the Speech AI models! 
 
-You can now go back to the `0_SPEECH_AI_BASICS.ipynb` file to start your discovery of Speech AI APIs! 
+You can now go back to the `/notebooks/0_SPEECH_AI_BASICS.ipynb` file to start your discovery of Speech AI APIs! 

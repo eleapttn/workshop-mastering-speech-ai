@@ -4,7 +4,7 @@
 
 **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** makes it easy to use it, with ready-to-use inference APIs. Indeed, the **NMT** API endpoint allows you to translate english written text to another language, in a few seconds.
 
-![NMT](../images/NMT.png)
+![NMT](./images/NMT.png)
 
 ## How to use the NMT API Endpoint
 

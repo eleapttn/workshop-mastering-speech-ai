@@ -5,7 +5,7 @@ preprocessing, feature extraction, acoustic modeling, language modeling, and spe
 
 **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** makes it easy to use it, with ready-to-use inference APIs. Indeed, the **ASR** API endpoint allows you to recognize and transcribe audio, especially human speech, into text, in a few seconds.
 
-![ASR](../images/ASR.png)
+![ASR](./images/ASR.png)
 
 ## How to use the ASR API Endpoint
 

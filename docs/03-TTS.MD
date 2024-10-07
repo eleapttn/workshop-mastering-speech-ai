@@ -4,7 +4,7 @@
 
 **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** makes it easy to use it, with ready-to-use inference APIs. Indeed, the **(TTS)** API endpoint takes text as input and returns an audio file, in a few seconds.
 
-![TTS](../images/TTS.png)
+![TTS](./images/TTS.png)
 
 ## How to use the TTS API Endpoint
 
