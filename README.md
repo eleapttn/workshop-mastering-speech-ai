@@ -60,12 +60,12 @@ CMD [ "python3" , "/workspace/main.py" ]
 
 Build the Docker image:
 
-`docker build . -t speech-ai-video-translator-app:v1.0.1`
+`docker build . -t speech-ai-video-translator-app:v1.0.2`
 
 Tag and push the Docker image on Docker Hub:
 
-`docker tag speech-ai-video-translator-app:v1.0.1 eleapttn/speech-ai-video-translator-app:v1.0.1`
-`docker push eleapttn/speech-ai-video-translator-app:v1.0.1`
+`docker tag speech-ai-video-translator-app:v1.0.2 eleapttn/speech-ai-video-translator-app:v1.0.2`
+`docker push eleapttn/speech-ai-video-translator-app:v1.0.2`
 
 ## 3. Launch Video Translator app
 
@@ -80,7 +80,7 @@ ovhai app run \
     --env TTS_EN_US_ENDPOINT=https://nvr-tts-en-us.endpoints.kepler.ai.cloud.ovh.net/api/v1/tts/text_to_audio \
     --env OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token> \
     --unsecure-http \
-    eleapttn/speech-ai-video-translator-app:v1.0.1
+    eleapttn/speech-ai-video-translator-app:v1.0.2
 ```
 
 > Access the web app on the following link: **[https://bit.ly/video-translator-devoxx](https://bit.ly/video-translator-devoxx)**
